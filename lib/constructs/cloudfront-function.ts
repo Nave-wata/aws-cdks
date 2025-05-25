@@ -34,7 +34,7 @@ abstract class CloudFrontFunctionBase extends Construct {
 export class DistributionDomainDeniedFunction extends CloudFrontFunctionBase {
   constructor(scope: Construct, id: string) {
     super(scope, id, {
-      filePath: 'lib/functions/cloudfront/distributionDomainDenied.js',
+      filePath: 'lib/functions/cloudfront/distribution-domain-denied.js',
       functionName: 'distributionDomainDenied',
       comment: 'Denies access to the default CloudFront distribution domain',
     });
@@ -49,7 +49,7 @@ export class DistributionDomainDeniedFunction extends CloudFrontFunctionBase {
 export class AppendIndexHtmlFunction extends CloudFrontFunctionBase {
   constructor(scope: Construct, id: string) {
     super(scope, id, {
-      filePath: 'lib/functions/cloudfront/appendIndexHtmlToAccessUri.js',
+      filePath: 'lib/functions/cloudfront/append-index-html-to-access-uri.js',
       functionName: 'appendIndexHtmlToAccessUri',
       comment: 'Appends index.html to URIs that end with / or have no file extension',
     });
